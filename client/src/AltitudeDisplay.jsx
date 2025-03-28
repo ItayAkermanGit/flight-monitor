@@ -5,14 +5,15 @@ export default function AltitudeDisplay({ value }) {
 
   return (
     <div style={{
-      height: '300px',
-      width: '60px',
+      height: '600px',           
+      width: '80px',             
       border: '1px solid black',
       backgroundColor: '#e0e0e0',
       display: 'flex',
       flexDirection: 'column-reverse',
       alignItems: 'center',
-      marginTop: '20px'
+      marginTop: '40px',         
+      marginLeft: '100px'         
     }}>
       <div style={{
         width: '100%',

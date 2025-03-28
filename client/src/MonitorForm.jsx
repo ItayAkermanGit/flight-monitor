@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import AltitudeDisplay from './AltitudeDisplay';
+import HISDisplay from './HISDisplay';
 
 
 export default function MonitorForm() {
@@ -52,7 +53,10 @@ export default function MonitorForm() {
       <br />
 
       <button onClick={handleSend}>SEND</button>
-      <AltitudeDisplay value={Number(altitude)} />
+      <div style={{ display: 'flex' }}>
+        <AltitudeDisplay value={Number(altitude)} />
+        <HISDisplay value={Number(his)} />
+      </div>
     </div>
   );
 }
