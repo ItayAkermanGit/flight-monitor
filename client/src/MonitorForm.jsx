@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import AltitudeDisplay from './AltitudeDisplay';
 import HISDisplay from './HISDisplay';
+import ADIDisplay from './ADIDisplay';
+
 
 
 export default function MonitorForm() {
@@ -56,6 +58,7 @@ export default function MonitorForm() {
       <div style={{ display: 'flex' }}>
         <AltitudeDisplay value={Number(altitude)} />
         <HISDisplay value={Number(his)} />
+        <ADIDisplay value={Number(adi)} />
       </div>
     </div>
   );
