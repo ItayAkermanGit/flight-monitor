@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import AltitudeDisplay from './AltitudeDisplay';
+
 
 export default function MonitorForm() {
   const [altitude, setAltitude] = useState("");
@@ -50,6 +52,7 @@ export default function MonitorForm() {
       <br />
 
       <button onClick={handleSend}>SEND</button>
+      <AltitudeDisplay value={Number(altitude)} />
     </div>
   );
 }
